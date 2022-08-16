@@ -1,0 +1,5 @@
+export const ADDTOCART = "ADDTOCART";
+export const REMOVEFROMCART = "REMOVEFROMCART";
+export const RESETCART = "RESETCART";
+export const INCREASEQTY = "INCREASEQTY";
+export const DECREASEQTY = "DECREASEQTY";
