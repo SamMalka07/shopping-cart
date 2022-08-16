@@ -10,7 +10,7 @@ const ShoppingCart = ({ closeCart, isOpen }: any) => {
 
   return (
     <div
-      className={`fixed top-0 right-0 bg-blue-400 w-[100vw] sm:w-[70vw] md:w-[60vw] lg:w-[40vw] h-full p-5 overflow-scroll ${
+      className={`fixed top-0 right-0 bg-blue-400 z-50 w-[100vw] sm:w-[70vw] md:w-[60vw] lg:w-[40vw] h-full p-5 overflow-scroll ${
         isOpen ? "open-sidebar translate-x-0" : "translate-x-full"
       } ease-in-out duration-1000`}
     >

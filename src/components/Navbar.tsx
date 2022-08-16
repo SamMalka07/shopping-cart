@@ -13,7 +13,7 @@ const Navbar = () => {
   };
   return (
     <>
-      <nav className="flex justify-between w-full h-24 bg-red-500 shadow-xl mb-10">
+      <nav className="flex justify-between w-full h-24 bg-red-500 shadow-xl mb-10 fixed z-20">
         <div className="w-3/5 mx-auto flex justify-between">
           <div className="flex list-none text-2xl h-full items-center">
             <Link
