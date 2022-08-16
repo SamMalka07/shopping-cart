@@ -14,19 +14,19 @@ export const data = [
   {
     id: 3,
     name: "Cadbury",
-    price: 9.99,
+    price: 3.99,
     img: "/images/cadbury.png",
   },
   {
     id: 4,
     name: "Kitkat",
-    price: 9.99,
+    price: 1.49,
     img: "/images/kitkat.png",
   },
   {
     id: 5,
     name: "Whittaker",
-    price: 9.99,
+    price: 4.99,
     img: "/images/whittaker.png",
   },
 ];

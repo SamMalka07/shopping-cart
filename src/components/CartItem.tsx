@@ -10,9 +10,16 @@ type cartProps = {
 };
 
 function CartItem({ id, quantity }: cartProps) {
-  const { removeFromCart, increaseQty, decreaseQty } = useCartContext();
+  const { state, removeFromCart, increaseQty, decreaseQty } = useCartContext();
   const item = data.find((i) => i.id === id);
   if (item == null) return null;
+
+  const countQuantity = (id: number): any => {
+    const item = state.cartItems.find((item) => item.id === id);
+    console.log(item?.quantity);
+    return item?.quantity;
+  };
+
   return (
     <div className="my-5">
       <div className="flex w-full">
@@ -21,7 +28,10 @@ function CartItem({ id, quantity }: cartProps) {
           <div className="flex items-center">
             <div>
               <p className="font-semibold">{item.name}</p>
-              <p>${twoDecimals(item.price)}</p>
+              <p>
+                <span>${twoDecimals(item.price)}</span> x{" "}
+                <span className="text-gray-700">{countQuantity(id)}(Qty)</span>
+              </p>
               <button
                 className="mr-1 mt-1 p-0.5 bg-white rounded-md"
                 onClick={() => decreaseQty(id)}

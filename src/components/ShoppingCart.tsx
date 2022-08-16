@@ -7,6 +7,7 @@ import { MdClose } from "react-icons/md";
 
 const ShoppingCart = ({ closeCart, isOpen }: any) => {
   const { state } = useCartContext();
+
   return (
     <div
       className={`fixed top-0 right-0 bg-blue-400 w-[100vw] sm:w-[70vw] md:w-[60vw] lg:w-[40vw] h-full p-5 overflow-scroll ${

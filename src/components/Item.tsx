@@ -10,6 +10,7 @@ type ItemProps = {
 
 const Item = ({ id, name, price, img }: ItemProps) => {
   const { addToCart } = useCartContext();
+
   return (
     <div className="flex justify-center m-3 p-5 shadow-2xl rounded-lg">
       <div className="w-full">
@@ -19,6 +20,7 @@ const Item = ({ id, name, price, img }: ItemProps) => {
         <h1 className="font-semibold mt-2">{name}</h1>
         <div className="flex justify-between ">
           <h2>${price}</h2>
+
           <button
             className="border-2 border-red-700 hover:bg-red-700 hover:text-white rounded-lg px-2"
             onClick={() => addToCart(id)}
